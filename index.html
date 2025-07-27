@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Mudassar’s Pedigree</title>
+  <title>Our Family Pedigree</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -22,108 +22,136 @@
     .intro {
       font-size: 20px;
       color: #bbb;
-      margin-bottom: 20px;
+      margin-bottom: 8px;
     }
 
-    .back {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 12px 24px;
-      border: 2px solid #fff;
-      border-radius: 8px;
-      color: #fff;
-      text-decoration: none;
+    .instruction {
       font-size: 18px;
-      transition: 0.3s;
-    }
-
-    .back:hover {
-      box-shadow: 0 0 10px #fff;
+      color: #999;
+      margin-bottom: 40px;
     }
 
     .tree {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 40px;
     }
 
-    .parent {
+    .parents {
       display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 40px;
       margin-bottom: 20px;
     }
 
-    .box {
-      border: 2px solid #fff;
-      padding: 15px 30px;
-      border-radius: 8px;
-      background: transparent; /* stays black */
-      transition: 0.3s;
+    .parent {
+      border: 3px solid #fff;
+      background: rgba(255,255,255,0.05);
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-size: 24px;
     }
 
-    .box:hover {
-      box-shadow: 0 0 10px #fff;
-      border-color: #fff;
-    }
-
-    .line-vertical {
+    .line {
       width: 2px;
       height: 40px;
-      background: #fff;
+      background: #aaa;
+    }
+
+    .branch {
+      width: 80%;
+      height: 2px;
+      background: #aaa;
+      margin: 0 auto;
     }
 
     .children {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 90%;
       margin-top: 20px;
-      gap: 40px;
+      gap: 20px;
     }
 
-    .row {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
+    .child {
+      border: 2px solid #aaa;
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 15px 25px;
+      width: 160px;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+      font-size: 20px;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+
+    /* Default hover */
+    .child:hover {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+      box-shadow: 0 0 10px #aaa;
+    }
+
+    /* Mudassar’s black hover */
+    .child.mudassar:hover {
+      background: #000;
+      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 0 10px #fff;
+    }
+
+    /* Umer’s white and black hover */
+    .child.umer:hover {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+      box-shadow: 0 0 10px #fff;
+    }
+
+    /* Mubashar’s blue hover */
+    .child.mubashar {
+      border-color: #2196f3;
+    }
+
+    .child.mubashar:hover {
+      background: #2196f3;
+      color: #000;
+      border-color: #2196f3;
+      box-shadow: 0 0 12px #2196f3;
+    }
+
+    /* Ahsan no hover effect */
+    .child.ahsan:hover {
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      border-color: #aaa;
+      box-shadow: none;
     }
   </style>
 </head>
 <body>
 
-  <h1>Mudassar’s Branch</h1>
-  <p class="intro">This page shows the pedigree details for Mudassar’s family branch.</p>
+  <h1>Our Family Pedigree</h1>
+  <p class="intro">A timeless family tree showing our father and mother and the four brothers.</p>
+  <p class="instruction">📌 Click a brother’s name to visit his branch.</p>
 
   <div class="tree">
-    <div class="parent">
-      <div class="box">Mudassar Ul Mahmood</div>
-      <div class="box">Fozia Mudassar</div>
+    <div class="parents">
+      <div class="parent">Mushtaq Ahmad</div>
+      <div class="parent">Razia Mushtaq</div>
     </div>
-
-    <div class="line-vertical"></div>
-
+    <div class="line"></div>
+    <div class="branch"></div>
     <div class="children">
-      <div class="box">Menal Mudassar</div>
-
-      <div class="line-vertical"></div>
-
-      <div class="row">
-        <div class="box">Muhammad Ahmad Mudassar</div>
-        <div class="box">Ayesha Mudassar</div>
-      </div>
-
-      <div class="line-vertical"></div>
-
-      <div class="box">Muhammad Khizer Mudassar</div>
-
-      <div class="line-vertical"></div>
-
-      <div class="box">Muhammad Aahil Mudassar</div>
+      <a href="brother1.html" class="child mudassar">Mudassar Ul Mahmood</a>
+      <a href="brother2.html" class="child umer">Umer Farooq</a>
+      <a href="brother3.html" class="child ahsan">Ahsan Mehmood</a>
+      <a href="brother4.html" class="child mubashar">Mubashar Shahzad</a>
     </div>
   </div>
-
-  <a href="index.html" class="back">← Back to Main Pedigree</a>
 
 </body>
 </html>
