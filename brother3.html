@@ -44,27 +44,34 @@
       margin-top: 40px;
     }
 
-    .parent {
-  border: 2px solid #aaa;
-  border-radius: 8px;
-  overflow: hidden; /* makes rounded corners work */
-  max-width: 200px; /* or whatever size you want */
-  padding: 0; /* remove extra space */
+    .parents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
     }
 
     .parent {
       border: 2px solid #aaa;
-      padding: 15px 30px;
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.05);
+      padding: 15px 20px;
+      max-width: 200px;
     }
 
     .parent img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 10px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .line-horizontal {
+      width: 40px;
+      height: 2px;
+      background: #aaa;
     }
 
     .line-vertical {
@@ -73,19 +80,6 @@
       background: #aaa;
       margin: 20px 0;
     }
-
-    .parents {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* space between items */
-}
-
-.line-horizontal {
-  width: 40px;
-  height: 2px;
-  background: #aaa;
-}
 
     .children {
       display: flex;
@@ -107,18 +101,18 @@
   <p class="intro">This page shows the pedigree details for Ahsan’s family branch.</p>
 
   <div class="tree">
-   <div class="parents">
-  <div class="parent">
-    <img src="images/IMG-20210307-WA0003.jpg" alt="Ahsan Mehmood" style="width: 150px; border-radius: 8px; display: block;">
-    <p style="margin-top: 10px;">Ahsan Mehmood</p>
-  </div>
+    <div class="parents">
+      <div class="parent">
+        <img src="images/IMG-20210307-WA0003.jpg" alt="Ahsan Mehmood">
+        <p>Ahsan Mehmood</p>
+      </div>
 
-  <div class="line-horizontal"></div>
+      <div class="line-horizontal"></div>
 
-  <div class="parent">
-    Jaweriya Ahsan
-  </div>
-   </div>
+      <div class="parent">
+        Jaweriya Ahsan
+      </div>
+    </div>
 
     <div class="line-vertical"></div>
 
