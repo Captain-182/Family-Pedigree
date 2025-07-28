@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Mudassar’s Pedigree</title>
+  <title>Mudassar’s Branch</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -38,8 +38,7 @@
     }
 
     .back:hover {
-      box-shadow: 0 0 15px #fff;
-      background: #111;
+      box-shadow: 0 0 10px #fff;
     }
 
     .tree {
@@ -64,13 +63,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: 0.3s;
-    }
-
-    .parent:hover {
-      background: #111;
-      box-shadow: 0 0 15px #fff;
-      transform: translateY(-5px);
     }
 
     .parent img {
@@ -110,19 +102,15 @@
 
     .child {
       border: 2px solid #fff;
-      padding: 12px 20px;
+      padding: 15px 30px;
       border-radius: 8px;
       background: transparent;
-      transition: 0.3s;
-    }
-
-    .child.with-image {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .child.with-image img {
+    .child img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -130,10 +118,16 @@
       margin-bottom: 8px;
     }
 
-    .child:hover {
-      background: #111;
-      box-shadow: 0 0 20px #fff;
-      transform: translateY(-5px);
+    .child.noimage {
+      padding: 15px 30px;
+      font-size: 20px;
+    }
+
+    .label {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #aaa;
+      font-style: italic;
     }
   </style>
 </head>
@@ -157,32 +151,34 @@
     <div class="line-vertical"></div>
 
     <div class="children">
-      <div class="child">
+      <div class="child noimage">
         Menal Mudassar
       </div>
 
       <div class="line-vertical"></div>
 
       <div class="row">
-        <div class="child with-image">
+        <div class="child">
           <img src="images/ahmad.jpg" alt="Muhammad Ahmad Mudassar">
           Muhammad Ahmad Mudassar
+          <div class="label">Twins</div>
         </div>
-        <div class="child">
+        <div class="child noimage">
           Ayesha Mudassar
+          <div class="label">Twins</div>
         </div>
       </div>
 
       <div class="line-vertical"></div>
 
-      <div class="child with-image">
+      <div class="child">
         <img src="images/khizer.jpg" alt="Muhammad Khizer Mudassar">
         Muhammad Khizer Mudassar
       </div>
 
       <div class="line-vertical"></div>
 
-      <div class="child with-image">
+      <div class="child">
         <img src="images/aahil.jpg" alt="Muhammad Aahil Mudassar">
         Muhammad Aahil Mudassar
       </div>
