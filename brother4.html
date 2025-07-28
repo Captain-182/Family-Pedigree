@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mubashar’s Pedigree</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #000;
+      color: #cce6ff; /* Light blue text */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #66ccff; /* Brighter blue for title */
+    }
+
+    .intro {
+      font-size: 20px;
+      color: #99ccff; /* Lighter blue */
+      margin-bottom: 20px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      border: 2px solid #3399ff;
+      border-radius: 8px;
+      color: #cce6ff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background: #3399ff;
+      color: #000;
+    }
+
+    .tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .parents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .parent {
+      border: 2px solid #3399ff;
+      padding: 15px 30px;
+      border-radius: 8px;
+      background: rgba(51, 153, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .parent img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .line-horizontal {
+      width: 40px;
+      height: 2px;
+      background: #3399ff;
+    }
+
+    .line-vertical {
+      width: 2px;
+      height: 40px;
+      background: #3399ff;
+      margin: 20px 0;
+    }
+
+    .children {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .child {
+      border: 2px solid #3399ff;
+      padding: 15px 30px;
+      border-radius: 8px;
+      background: rgba(51, 153, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .child img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+
+    .child:hover {
+      background: #3399ff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mubashar’s Branch</h1>
+  <p class="intro">This page shows the pedigree details for Mubashar’s family branch.</p>
+
+  <div class="tree">
+    <div class="parents">
+      <div class="parent">
+        <img src="images/brother4.jpg" alt="Mubashar">
+        Mubashar
+      </div>
+      <div class="line-horizontal"></div>
+      <div class="parent">
+        Mubashar’s Wife
+      </div>
+    </div>
+
+    <div class="line-vertical"></div>
+
+    <div class="children">
+      <div class="child">
+        <img src="images/sales.jpg" alt="Son 1">
+        Sales Mubashar
+      </div>
+      <div class="child">
+        <img src="images/huzaifa.jpg" alt="Son 2">
+        Huzaifa Mubashar
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html" class="back">← Back to Main Pedigree</a>
+
+</body>
+</html>
