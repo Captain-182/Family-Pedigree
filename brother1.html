@@ -38,7 +38,8 @@
     }
 
     .back:hover {
-      box-shadow: 0 0 10px #fff;
+      box-shadow: 0 0 15px #fff;
+      background: #111;
     }
 
     .tree {
@@ -68,8 +69,8 @@
 
     .parent:hover {
       background: #111;
-      border-color: #fff;
       box-shadow: 0 0 15px #fff;
+      transform: translateY(-5px);
     }
 
     .parent img {
@@ -109,16 +110,19 @@
 
     .child {
       border: 2px solid #fff;
-      padding: 15px 30px;
+      padding: 12px 20px;
       border-radius: 8px;
       background: transparent;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       transition: 0.3s;
     }
 
-    .child img {
+    .child.with-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .child.with-image img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -128,21 +132,8 @@
 
     .child:hover {
       background: #111;
-      box-shadow: 0 0 15px #fff;
-    }
-
-    .no-image {
-      border: 2px solid #fff;
-      padding: 10px 20px;
-      border-radius: 8px;
-      background: transparent;
-      display: inline-block;
-      transition: 0.3s;
-    }
-
-    .no-image:hover {
-      background: #111;
-      box-shadow: 0 0 15px #fff;
+      box-shadow: 0 0 20px #fff;
+      transform: translateY(-5px);
     }
   </style>
 </head>
@@ -166,32 +157,32 @@
     <div class="line-vertical"></div>
 
     <div class="children">
-      <div class="no-image">
+      <div class="child">
         Menal Mudassar
       </div>
 
       <div class="line-vertical"></div>
 
       <div class="row">
-        <div class="child">
+        <div class="child with-image">
           <img src="images/ahmad.jpg" alt="Muhammad Ahmad Mudassar">
           Muhammad Ahmad Mudassar
         </div>
-        <div class="no-image">
+        <div class="child">
           Ayesha Mudassar
         </div>
       </div>
 
       <div class="line-vertical"></div>
 
-      <div class="child">
+      <div class="child with-image">
         <img src="images/khizer.jpg" alt="Muhammad Khizer Mudassar">
         Muhammad Khizer Mudassar
       </div>
 
       <div class="line-vertical"></div>
 
-      <div class="child">
+      <div class="child with-image">
         <img src="images/aahil.jpg" alt="Muhammad Aahil Mudassar">
         Muhammad Aahil Mudassar
       </div>
