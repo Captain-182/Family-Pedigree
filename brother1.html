@@ -108,6 +108,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: 0.3s;
     }
 
     .child img {
@@ -118,9 +119,24 @@
       margin-bottom: 8px;
     }
 
-    /* ✅ Special box for child without image */
-    .child.no-image {
-      display: block; /* just block, no flex */
+    .child:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* ✅ Dedicated no-image style */
+    .no-image {
+      border: 2px solid #fff;
+      padding: 15px 30px;
+      border-radius: 8px;
+      background: transparent;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .no-image:hover {
+      background: #fff;
+      color: #000;
     }
   </style>
 </head>
@@ -144,7 +160,7 @@
     <div class="line-vertical"></div>
 
     <div class="children">
-      <div class="child no-image">
+      <div class="no-image">
         Menal Mudassar
       </div>
 
@@ -155,7 +171,7 @@
           <img src="images/ahmad.jpg" alt="Muhammad Ahmad Mudassar">
           Muhammad Ahmad Mudassar
         </div>
-        <div class="child no-image">
+        <div class="no-image">
           Ayesha Mudassar
         </div>
       </div>
