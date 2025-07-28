@@ -119,9 +119,11 @@
     }
 
     .child.noimage {
-      display: block; /* OVERRIDE flex display for no image */
-      padding: 15px 30px;
-      font-size: 20px;
+  display: block;
+  padding: 15px 30px;
+  font-size: 20px;
+  align-self: flex-start; /* Important! */
+  width: auto;            /* Important! */
     }
 
     .label {
@@ -159,15 +161,16 @@
       <div class="line-vertical"></div>
 
       <div class="row">
-        <div class="child">
-          <img src="images/ahmad.jpg" alt="Muhammad Ahmad Mudassar">
-          Muhammad Ahmad Mudassar
-          <div class="label">Twins</div>
-        </div>
-        <div class="child noimage">
-          Ayesha Mudassar
-          <div class="label">Twins</div>
-        </div>
+      <div class="row">
+  <div class="child">
+    <img src="images/ahmad.jpg" alt="Muhammad Ahmad Mudassar">
+    Muhammad Ahmad Mudassar
+    <div class="label">Twins</div>
+  </div>
+  <div class="child noimage">
+    Ayesha Mudassar
+    <div class="label">Twins</div>
+  </div>
       </div>
 
       <div class="line-vertical"></div>
