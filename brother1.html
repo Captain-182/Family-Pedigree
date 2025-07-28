@@ -63,6 +63,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: 0.3s;
+    }
+
+    .parent:hover {
+      background: #000;
+      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 0 10px #fff;
     }
 
     .parent img {
@@ -120,23 +128,24 @@
     }
 
     .child:hover {
-      background: #fff;
-      color: #000;
+      background: #000;
+      color: #fff;
+      box-shadow: 0 0 10px #fff;
     }
 
-    /* ✅ Dedicated no-image style */
     .no-image {
       border: 2px solid #fff;
       padding: 15px 30px;
       border-radius: 8px;
       background: transparent;
-      display: inline-block;
+      display: inline-block; /* NOT flex! */
       transition: 0.3s;
     }
 
     .no-image:hover {
-      background: #fff;
-      color: #000;
+      background: #000;
+      color: #fff;
+      box-shadow: 0 0 10px #fff;
     }
   </style>
 </head>
