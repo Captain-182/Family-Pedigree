@@ -102,14 +102,12 @@
       word-wrap: break-word;
       white-space: normal;
 
-      /* Animations */
       opacity: 0;
       transform: translateY(20px);
-      animation: fadeInUp 0.6s forwards;
-      transition: 0.3s transform, 0.3s box-shadow;
+      animation: fadeInUp 1s forwards;
+      transition: 0.4s transform, 0.4s box-shadow;
     }
 
-    /* Stagger fade-in */
     .child:nth-child(1) { animation-delay: 0.2s; }
     .child:nth-child(2) { animation-delay: 0.4s; }
     .child:nth-child(3) { animation-delay: 0.6s; }
@@ -122,27 +120,44 @@
       }
     }
 
-    /* Hover effects for .child */
     .child:hover {
       transform: translateY(-5px) scale(1.05);
       box-shadow: 0 0 20px #fff;
-      animation: pulse 1s infinite alternate;
+    }
+
+    /* Mudassar’s black hover */
+    .child.mudassar:hover {
       background: #000;
       color: #fff;
       border-color: #fff;
+      box-shadow: 0 0 20px #fff;
     }
 
-    @keyframes pulse {
-      from { box-shadow: 0 0 10px #fff; }
-      to { box-shadow: 0 0 20px #fff; }
+    /* Umer’s black & white hover */
+    .child.umer:hover {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+      box-shadow: 0 0 20px #fff;
     }
 
-    /* Unique hover colors for specific brothers if needed */
+    /* Mubashar’s blue hover */
     .child.mubashar {
       border-color: #2196f3;
     }
     .child.mubashar:hover {
+      background: #2196f3;
+      color: #000;
+      border-color: #2196f3;
       box-shadow: 0 0 20px #2196f3;
+    }
+
+    /* Ahsan same as default */
+    .child.ahsan:hover {
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      border-color: #aaa;
+      box-shadow: 0 0 20px #fff;
     }
 
     .brothers-photo {
