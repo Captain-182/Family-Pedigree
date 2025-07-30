@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kiran’s Branch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #9b59b6; /* Purple theme */
+    }
+
+    .intro {
+      font-size: 20px;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      border: 2px solid #9b59b6;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      box-shadow: 0 0 15px #9b59b6;
+      background: #9b59b6;
+    }
+
+    .tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .parents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .parent {
+      border: 2px solid #9b59b6;
+      padding: 15px 30px;
+      border-radius: 8px;
+      background: rgba(155, 89, 182, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    .parent:hover {
+      box-shadow: 0 0 15px #9b59b6;
+    }
+
+    .line-horizontal {
+      width: 40px;
+      height: 2px;
+      background: #9b59b6;
+    }
+
+    .line-vertical {
+      width: 2px;
+      height: 40px;
+      background: #9b59b6;
+      margin: 20px 0;
+    }
+
+    .children {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .child {
+      border: 2px solid #9b59b6;
+      padding: 15px 30px;
+      border-radius: 8px;
+      background: rgba(155, 89, 182, 0.05);
+      transition: 0.3s;
+    }
+
+    .child:hover {
+      background: #9b59b6;
+      color: #fff;
+      box-shadow: 0 0 15px #9b59b6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kiran’s Branch</h1>
+  <p class="intro">This page shows the family branch of Kiran Usman and Usman Shafiq.</p>
+
+  <div class="tree">
+    <div class="parents">
+      <div class="parent">
+        Usman Shafiq
+      </div>
+      <div class="line-horizontal"></div>
+      <div class="parent">
+        Kiran Usman
+      </div>
+    </div>
+
+    <div class="line-vertical"></div>
+
+    <div class="children">
+      <div class="child">Mohid Usman</div>
+      <div class="child">Ibrahim Usman</div>
+      <div class="child">Haram Usman</div>
+    </div>
+  </div>
+
+  <a href="index.html" class="back">← Back to Main Pedigree</a>
+
+</body>
+</html>
