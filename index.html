@@ -160,7 +160,20 @@
       border-color: #aaa;
       box-shadow: 0 0 20px #fff;
     }
+<style>
+  /* Add this with other .child hover rules */
+  .child.kiran {
+    border-color: #9b59b6;
+  }
 
+  .child.kiran:hover {
+    background: #9b59b6;
+    color: #fff;
+    border-color: #9b59b6;
+    box-shadow: 0 0 20px #9b59b6;
+  }
+</style>
+  
     /* Kiran’s purple hover */
     .sister.kiran {
       border-color: #9b59b6;
@@ -215,14 +228,13 @@
     </div>
 
     <div class="line"></div>
-    <div class="branch"></div>
 
-    <div class="sisters">
-      <div class="sister">Shazia Mushtaq</div>
-      <div class="sister">Irum Mushtaq</div>
-      <div class="sister kiran">Kiran Mushtaq</div>
-    </div>
-  </div>
+    <div class="branch"></div>
+<div class="children">
+  <a href="#" class="child">Shazia Mushtaq</a>
+  <a href="#" class="child">Irum Mushtaq</a>
+  <a href="sister3.html" class="child kiran">Kiran Mushtaq</a>
+</div>
 
   <img src="images/allbrothers.jpg" alt="All Brothers" class="brothers-photo">
 
