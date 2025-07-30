@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Kiran’s Branch</title>
+  <title>Kiran Usman’s Branch</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -17,7 +17,6 @@
       font-family: 'Cinzel', serif;
       font-size: 48px;
       margin-bottom: 10px;
-      color: #9b59b6; /* Purple theme */
     }
 
     .intro {
@@ -30,7 +29,7 @@
       display: inline-block;
       margin-top: 40px;
       padding: 12px 24px;
-      border: 2px solid #9b59b6;
+      border: 2px solid #fff;
       border-radius: 8px;
       color: #fff;
       text-decoration: none;
@@ -39,8 +38,7 @@
     }
 
     .back:hover {
-      box-shadow: 0 0 15px #9b59b6;
-      background: #9b59b6;
+      box-shadow: 0 0 10px #fff;
     }
 
     .tree {
@@ -54,68 +52,100 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 20px;
     }
 
     .parent {
-      border: 2px solid #9b59b6;
+      border: 2px solid #fff;
       padding: 15px 30px;
       border-radius: 8px;
-      background: rgba(155, 89, 182, 0.05);
+      background: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: 0.3s;
     }
 
-    .parent:hover {
-      box-shadow: 0 0 15px #9b59b6;
+    .parent img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
     }
 
     .line-horizontal {
       width: 40px;
       height: 2px;
-      background: #9b59b6;
+      background: #aaa;
     }
 
     .line-vertical {
       width: 2px;
       height: 40px;
-      background: #9b59b6;
+      background: #fff;
       margin: 20px 0;
     }
 
     .children {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      gap: 40px;
+    }
+
+    .row {
+      display: flex;
       justify-content: center;
       gap: 40px;
-      margin-top: 20px;
+      flex-wrap: wrap;
     }
 
     .child {
       border: 2px solid #9b59b6;
       padding: 15px 30px;
       border-radius: 8px;
-      background: rgba(155, 89, 182, 0.05);
-      transition: 0.3s;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: 0.3s ease;
     }
 
     .child:hover {
       background: #9b59b6;
       color: #fff;
+      border-color: #9b59b6;
+      transform: translateY(-5px);
       box-shadow: 0 0 15px #9b59b6;
+    }
+
+    .child img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+
+    .child.noimage {
+      display: block;
+      padding: 15px 30px;
+      font-size: 20px;
+      align-self: center;
+      width: auto;
     }
   </style>
 </head>
 <body>
 
-  <h1>Kiran’s Branch</h1>
-  <p class="intro">This page shows the family branch of Kiran Usman and Usman Shafiq.</p>
+  <h1>Kiran Usman’s Branch</h1>
+  <p class="intro">This page shows the pedigree details for Kiran Usman’s family branch.</p>
 
   <div class="tree">
     <div class="parents">
       <div class="parent">
+        <img src="usman.jpg" alt="Usman Shafiq">
         Usman Shafiq
       </div>
       <div class="line-horizontal"></div>
@@ -127,9 +157,19 @@
     <div class="line-vertical"></div>
 
     <div class="children">
-      <div class="child">Mohid Usman</div>
-      <div class="child">Ibrahim Usman</div>
-      <div class="child">Haram Usman</div>
+      <div class="row">
+        <div class="child">
+          <img src="mohid.jpg" alt="Mohid Usman">
+          Mohid Usman
+        </div>
+        <div class="child">
+          <img src="ibrahim.jpg" alt="Ibrahim Usman">
+          Ibrahim Usman
+        </div>
+        <div class="child noimage">
+          Haram Usman
+        </div>
+      </div>
     </div>
   </div>
 
